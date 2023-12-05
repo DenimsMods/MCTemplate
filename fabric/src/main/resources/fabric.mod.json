@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "templatemod",
+  "version": "${version}",
+  "entrypoints": {
+    "main": [
+      "dev.denimred.templatemod.fabric.TemplateModFabric"
+    ],
+    "client": [
+      "dev.denimred.templatemod.fabric.client.TemplateModFabricClient"
+    ]
+  },
+  "mixins": [
+    "templatemod.mixins.json",
+    "templatemod-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.11.0"
+  }
+}

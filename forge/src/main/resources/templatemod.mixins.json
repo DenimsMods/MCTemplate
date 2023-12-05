@@ -1,0 +1,13 @@
+{
+  "package": "dev.denimred.templatemod.forge.mixin",
+  "required": true,
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

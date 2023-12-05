@@ -1,0 +1,37 @@
+[versions]
+# Common
+minecraft = { strictly = "1.18.2" }
+parchment = "2022.11.06"
+
+# Architectury
+architectury-plugin = "3.4-SNAPSHOT"
+architectury-loom = "1.4-SNAPSHOT"
+architectury-api = "4.11.93"
+
+# Fabric
+fabric-loader = "0.15.0"
+fabric-api = "0.77.0+1.18.2"
+
+# Forge
+forge = "1.18.2-40.2.14"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+parchment = { module = "org.parchmentmc.data:parchment-1.18.2", version.ref = "parchment" }
+
+# Architectury
+architectury-common = { module = "dev.architectury:architectury", version.ref = "architectury-api" }
+architectury-fabric = { module = "dev.architectury:architectury-fabric", version.ref = "architectury-api" }
+architectury-forge = { module = "dev.architectury:architectury-forge", version.ref = "architectury-api" }
+
+# Fabric
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
+
+# Forge
+forge = { module = "net.minecraftforge:forge", version.ref = "forge" }
+
+[plugins]
+# Architectury
+architectury-plugin = { id = "architectury-plugin", version.ref = "architectury-plugin" }
+architectury-loom = { id = "dev.architectury.loom", version.ref = "architectury-loom" }
